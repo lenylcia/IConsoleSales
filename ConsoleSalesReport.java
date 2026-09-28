@@ -1,0 +1,17 @@
+public class ConsoleSalesReport {
+}
+public class ConsoleSalesReport extends ConsoleSales {
+
+    public ConsoleSalesReport(String consoleType, String store, int totalSales) {
+        super(consoleType, store, totalSales);
+    }
+
+    public void printConsoleSalesReport() {
+        System.out.println("CONSOLE SALES REPORT");
+        System.out.println("*************************");
+        System.out.println("CONSOLE TYPE: " + getConsoleType());
+        System.out.println("STORE: " + getStore());
+        System.out.println("TOTAL SALES: " + getTotalSales());
+        System.out.println("*************************");
+    }
+}
